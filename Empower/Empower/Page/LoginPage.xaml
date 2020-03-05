@@ -17,8 +17,8 @@
                 <RowDefinition Height="0.6*"/>
                 <RowDefinition Height="0.1*"/>
             </Grid.RowDefinitions>
-            
-            <Image Source="background"
+
+            <Image Source="loginbackground"
                    Aspect="AspectFill"
                    Grid.RowSpan="3"/>
             <Image Source="Empower_logo"
@@ -30,17 +30,26 @@
             <panckaeview:PancakeView  BackgroundColor="White"
                    Grid.Row="1"
                  Elevation="2"
-                   Margin="25,30,25,40"
-                   
+                   Margin="25,30,25,20"
+                   HeightRequest="363"
                    CornerRadius="16">
                 <StackLayout>
                     <Label Text="LOGIN"
-                           Margin="0,10,0,10"
-                           TextColor="Black"
+                           Margin="0,15,0,10"
+                           TextColor="{StaticResource greycolor}"
+                        
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            FontAttributes="Bold"
-                           FontSize="15"/>
+                           FontSize="15">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" >
+                                <On Platform="iOS" Value="ProximaNovaRegular" />
+                                <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
                     <Grid Margin="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="auto"/>
@@ -57,9 +66,17 @@
                                               Margin="-6,0,0,0"
                                               Placeholder="Email"
                                                HorizontalOptions="FillAndExpand"
-                                               TextColor="Black"
+                                               TextColor="{StaticResource greycolor}"
                                                VerticalTextAlignment="Center"
-                                               />
+                                               >
+                            <controls:RoundedEntry.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </controls:RoundedEntry.FontFamily>
+                        </controls:RoundedEntry>
                         <BoxView HeightRequest="1"
                                   Margin="5,0,5,0"
                                  VerticalOptions="End"
@@ -82,24 +99,42 @@
                                               Margin="-6,0,0,0"
                                               Placeholder="Password"
                                                HorizontalOptions="FillAndExpand"
-                                               TextColor="Black"
+                                              TextColor="{StaticResource greycolor}"
                                                VerticalTextAlignment="Center"
-                                               />
+                                               >
+                            
+                            <controls:RoundedEntry.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </controls:RoundedEntry.FontFamily>
+                        </controls:RoundedEntry>
                         <BoxView HeightRequest="1"
                                   Margin="5,0,5,0"
                                  VerticalOptions="End"
                                  Grid.ColumnSpan="2"
-                             BackgroundColor="#E8E8E8"/>
+                             BackgroundColor="{StaticResource lighgrey}"/>
                     </Grid>
                     <Button CornerRadius="25"
                             Text="SIGN IN"
                             TextColor="White"
-                       HeightRequest="40"
+                       HeightRequest="43"
                             Command="{Binding LoginCommand}"
                             FontSize="Body"
-                            BackgroundColor="#058ED0"
-                            Margin="20,20"/>
-                    <Grid Margin="15,-8,0,15"
+                            BackgroundColor="{StaticResource blue}"
+                            Margin="20,20">
+                        <Button.FontFamily>
+                          <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            
+                        </Button.FontFamily>
+                    </Button>
+                    <Grid Margin="0,5,0,0"
                           VerticalOptions="Center"
                           HorizontalOptions="Center"
                                 >
@@ -111,18 +146,35 @@
                         <Label Grid.Column="0"
                             Text="Forget Pasword?"
                                Margin="0,0,5,0"
-                               TextColor="Black"
-                               FontSize="13"/>
+                               TextColor="{StaticResource greycolor}"
+                               FontSize="13">
+                            
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                         <BoxView WidthRequest="1"
                                  HeightRequest="10"
                            
-                                 BackgroundColor="Black"
+                                 BackgroundColor="{StaticResource greycolor}"
                                  Grid.Column="1"/>
                         <Label Grid.Column="2"
                             Text="Create account"
-                               TextColor="Black"
+                               TextColor="{StaticResource greycolor}"
                                Margin="5,0,0,0"
-                               FontSize="13"/>
+                               FontSize="13">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
 
                     </Grid>
                 </StackLayout>

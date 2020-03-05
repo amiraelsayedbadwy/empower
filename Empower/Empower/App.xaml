@@ -6,6 +6,11 @@
              mc:Ignorable="d"
              x:Class="Empower.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="greycolor">#3B3B3B</Color>
+            <Color x:Key="lighgrey">#DCDCDC</Color>
+            <Color x:Key="blue">#24C3F2</Color>
+           
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

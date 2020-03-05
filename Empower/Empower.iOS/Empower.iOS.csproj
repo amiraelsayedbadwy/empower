@@ -178,4 +178,28 @@
   <ItemGroup>
     <BundleResource Include="Resources\projects.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\photo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\testimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\testimage%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\testimage%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loginbackground%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loginbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loginbackground%403x.png" />
+  </ItemGroup>
 </Project>

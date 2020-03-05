@@ -31,7 +31,7 @@
                                          HorizontalOptions="End"
                                          Margin="0,0,5,0"
                                        
-                                         Source="email"
+                                         Source="photo"
                                          HeightRequest="40" 
                                          WidthRequest="40" >
                     <circleimage:CachedImage.Transformations>
@@ -44,29 +44,54 @@
                                       Elevation="5"
                 Margin="20,10,20,5" Grid.Row="1"
                 CornerRadius="20"
-                      WidthRequest="100" >
+                HeightRequest="217"
+                      WidthRequest="339" >
                 <Grid>
-                    <Image Source="background" Aspect="AspectFill"/>
+                    <Image Source="testimage" Aspect="AspectFill"/>
                     <StackLayout BackgroundColor="Black"
                                  VerticalOptions="End"
-                                 Opacity="0.2"
+                                 Opacity="0.3"
                                  HeightRequest="65"
                                  />
-                    <StackLayout Margin="20,0,0,0"
+                    <StackLayout Margin="10,0,0,0"
                             VerticalOptions="End"
                                  HeightRequest="65">
                         <Label Text="APR 20, 2019" 
-                               FontSize="12"
+                               FontSize="11"
                                Margin="0,10,0,0"
-                               TextColor="#058ED0"/>
+                               TextColor="{StaticResource blue}">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                         <Label Text="ASHARE and Empower Energy Solution " 
-                               FontSize="12"
+                               FontSize="14"
                                Margin="0,-5,0,0"
-                               TextColor="white"/>
+                               TextColor="white">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                         <Label Text=" teamed to present a workshop in Dubai" 
-                               FontSize="12"
+                               FontSize="14"
                                 Margin="0,-5,0,0"
-                               TextColor="white"/>
+                               TextColor="white">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                     </StackLayout>
 
                 </Grid>
@@ -87,7 +112,7 @@
                                          WidthRequest="40"
                                          CornerRadius="10"
                                          Margin="0,10,7,0"
-                                         BackgroundColor="#058ED0">
+                                         BackgroundColor="{StaticResource blue}">
                     <Grid>
                     <panckaeview:PancakeView HeightRequest="80"
                                              Opacity="0.1"
@@ -102,9 +127,18 @@
                                VerticalOptions="Center"/>
                         <Label Text="Bill Payment"
                                VerticalOptions="End"
+                               HorizontalOptions="Center"
                                TextColor="White"
-                               Margin="30,10,0,10"
-                               />
+                               Margin="0,12,0,7"
+                               >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                     </Grid>
                 </panckaeview:PancakeView>
                 <panckaeview:PancakeView Grid.Column="1"
@@ -113,7 +147,7 @@
                                        HeightRequest="40"
                                          WidthRequest="40"
                                          CornerRadius="10"
-                                         BackgroundColor="#058ED0">
+                                         BackgroundColor="{StaticResource blue}">
                     <Grid>
                         <panckaeview:PancakeView HeightRequest="80"
                                              Opacity="0.1"
@@ -129,8 +163,17 @@
                         <Label Text="Pay For Account"
                                VerticalOptions="End"
                                TextColor="White"
-                               Margin="30,10,0,10"
-                               />
+                               HorizontalOptions="Center"
+                               Margin="0,14,0,7"
+                               >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                     </Grid>
                 </panckaeview:PancakeView>
                 <panckaeview:PancakeView Grid.Column="0"
@@ -139,7 +182,7 @@
                                        HeightRequest="40"
                                          WidthRequest="40"
                                          CornerRadius="10"
-                                         BackgroundColor="#058ED0">
+                                         BackgroundColor="{StaticResource blue}">
                     <Grid>
                         <panckaeview:PancakeView HeightRequest="80"
                                              Opacity="0.1"
@@ -155,8 +198,17 @@
                         <Label Text="Charge Calc"
                                VerticalOptions="End"
                                TextColor="White"
-                               Margin="30,10,0,10"
-                               />
+                               HorizontalOptions="Center"
+                               Margin="0,14,0,7"
+                               >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                     </Grid>
                 </panckaeview:PancakeView>
                 <panckaeview:PancakeView Grid.Column="1"
@@ -165,7 +217,7 @@
                                        HeightRequest="40"
                                          WidthRequest="40"
                                          CornerRadius="10"
-                                         BackgroundColor="#058ED0">
+                                         BackgroundColor="{StaticResource blue}">
                     <Grid>
                         <panckaeview:PancakeView HeightRequest="80"
                                              Opacity="0.1"
@@ -181,8 +233,17 @@
                         <Label Text="Service Info"
                                VerticalOptions="End"
                                TextColor="White"
-                               Margin="30,10,0,10"
-                               />
+                               HorizontalOptions="Center"
+                               Margin="0,14,0,7"
+                               >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" >
+                                    <On Platform="iOS" Value="ProximaNovaRegular" />
+                                    <On Platform="Android" Value="ProximaNovaRegular.otf#ProximaNovaRegular" />
+
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
                     </Grid>
                 </panckaeview:PancakeView>
 
