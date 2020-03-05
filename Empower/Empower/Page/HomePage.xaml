@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+           NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+             BackgroundColor="White"
+        xmlns:ffTrans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:circleimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+            xmlns:panckaeview="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Empower.Page.HomePage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="0.37*"/>
+                <RowDefinition Height="0.63*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"
+                  Margin="20,20,20,5"> 
+                <Grid.ColumnDefinitions>
+                   
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                </Grid.ColumnDefinitions>
+                <Image  Grid.Column="0"
+                    Source="logo"/>
+                <circleimage:CachedImage Grid.Column="1"
+                                         HorizontalOptions="End"
+                                         Margin="0,0,5,0"
+                                       
+                                         Source="email"
+                                         HeightRequest="40" 
+                                         WidthRequest="40" >
+                    <circleimage:CachedImage.Transformations>
+                        <ffTrans:CircleTransformation />
+                    </circleimage:CachedImage.Transformations>
+                    
+                </circleimage:CachedImage>
+            </Grid>
+            <panckaeview:PancakeView  
+                                      Elevation="5"
+                Margin="20,10,20,5" Grid.Row="1"
+                CornerRadius="20"
+                      WidthRequest="100" >
+                <Grid>
+                    <Image Source="background" Aspect="AspectFill"/>
+                    <StackLayout BackgroundColor="Black"
+                                 VerticalOptions="End"
+                                 Opacity="0.2"
+                                 HeightRequest="65"
+                                 />
+                    <StackLayout Margin="20,0,0,0"
+                            VerticalOptions="End"
+                                 HeightRequest="65">
+                        <Label Text="APR 20, 2019" 
+                               FontSize="12"
+                               Margin="0,10,0,0"
+                               TextColor="#058ED0"/>
+                        <Label Text="ASHARE and Empower Energy Solution " 
+                               FontSize="12"
+                               Margin="0,-5,0,0"
+                               TextColor="white"/>
+                        <Label Text=" teamed to present a workshop in Dubai" 
+                               FontSize="12"
+                                Margin="0,-5,0,0"
+                               TextColor="white"/>
+                    </StackLayout>
+
+                </Grid>
+            </panckaeview:PancakeView>
+            <Grid Grid.Row="2" Margin="20,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.25*"/>
+                </Grid.ColumnDefinitions>
+                <panckaeview:PancakeView Grid.Column="0"
+                                         Grid.Row="0"
+                                       HeightRequest="40"
+                                         WidthRequest="40"
+                                         CornerRadius="10"
+                                         Margin="0,10,7,0"
+                                         BackgroundColor="#058ED0">
+                    <Grid>
+                    <panckaeview:PancakeView HeightRequest="80"
+                                             Opacity="0.1"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             CornerRadius="70"
+                                             BackgroundColor="White"
+                                            WidthRequest="80"/>
+                    <Image Source="payment"
+                               HeightRequest="40" WidthRequest="40"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label Text="Bill Payment"
+                               VerticalOptions="End"
+                               TextColor="White"
+                               Margin="30,10,0,10"
+                               />
+                    </Grid>
+                </panckaeview:PancakeView>
+                <panckaeview:PancakeView Grid.Column="1"
+                                         Grid.Row="0"
+                                         Margin="7,10,0,0"
+                                       HeightRequest="40"
+                                         WidthRequest="40"
+                                         CornerRadius="10"
+                                         BackgroundColor="#058ED0">
+                    <Grid>
+                        <panckaeview:PancakeView HeightRequest="80"
+                                             Opacity="0.1"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             CornerRadius="70"
+                                             BackgroundColor="White"
+                                            WidthRequest="80"/>
+                        <Image Source="payforaccount"
+                               HeightRequest="40" WidthRequest="40"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label Text="Pay For Account"
+                               VerticalOptions="End"
+                               TextColor="White"
+                               Margin="30,10,0,10"
+                               />
+                    </Grid>
+                </panckaeview:PancakeView>
+                <panckaeview:PancakeView Grid.Column="0"
+                                         Grid.Row="1"
+                                         Margin="0,10,7,0"
+                                       HeightRequest="40"
+                                         WidthRequest="40"
+                                         CornerRadius="10"
+                                         BackgroundColor="#058ED0">
+                    <Grid>
+                        <panckaeview:PancakeView HeightRequest="80"
+                                             Opacity="0.1"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             CornerRadius="70"
+                                             BackgroundColor="White"
+                                            WidthRequest="80"/>
+                        <Image Source="charge"
+                               HeightRequest="40" WidthRequest="40"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label Text="Charge Calc"
+                               VerticalOptions="End"
+                               TextColor="White"
+                               Margin="30,10,0,10"
+                               />
+                    </Grid>
+                </panckaeview:PancakeView>
+                <panckaeview:PancakeView Grid.Column="1"
+                                         Grid.Row="1"
+                                                Margin="7,10,0,0"
+                                       HeightRequest="40"
+                                         WidthRequest="40"
+                                         CornerRadius="10"
+                                         BackgroundColor="#058ED0">
+                    <Grid>
+                        <panckaeview:PancakeView HeightRequest="80"
+                                             Opacity="0.1"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             CornerRadius="70"
+                                             BackgroundColor="White"
+                                            WidthRequest="80"/>
+                        <Image Source="serviceinfo"
+                               HeightRequest="40" WidthRequest="40"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                        <Label Text="Service Info"
+                               VerticalOptions="End"
+                               TextColor="White"
+                               Margin="30,10,0,10"
+                               />
+                    </Grid>
+                </panckaeview:PancakeView>
+
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
