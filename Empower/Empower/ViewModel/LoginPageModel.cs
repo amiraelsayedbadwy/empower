@@ -25,10 +25,10 @@ namespace Empower.ViewModel
             var tabbedNavigation = new FreshTabbedNavigationContainer();
             tabbedNavigation.On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
             tabbedNavigation.BackgroundColor = Color.White;
-            tabbedNavigation.AddTab<HomePageModel>("", "home.png");
-            tabbedNavigation.AddTab<ProjectPageModel>("", "projects.png");
-            tabbedNavigation.AddTab<NewsPageModel>("", "news.png");
-            tabbedNavigation.AddTab<ContactPageModel>("", "contactimage.png");
+            tabbedNavigation.AddTab<HomePageModel>("Home", "home.png");
+            tabbedNavigation.AddTab<ProjectPageModel>("Projects", "projects.png");
+            tabbedNavigation.AddTab<NewsPageModel>("News", "news.png");
+            tabbedNavigation.AddTab<ContactPageModel>("Contact", "contactimage.png");
           App.Current. MainPage = tabbedNavigation;
         }
     }
